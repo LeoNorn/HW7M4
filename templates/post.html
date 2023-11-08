@@ -1,0 +1,13 @@
+{% include 'cartoons/header.html' %}
+
+{% for i in post_key %}
+{{ i.title }}
+<br>
+{{i.description}}
+<br>
+<img src="{{i.image.url}}" alt="">
+<br>
+{{i.created_at}}
+{% endfor %}
+
+{% include 'cartoons/footer.html' %}
